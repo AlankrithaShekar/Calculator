@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+     </head>
+     <body class= "body">
+        <h1>Calculator</h1>
+        <div class="display">
+            <div id="accumulator" class="acc"></div>
+            <div id="total" class="total" hidden></div>
+        </div>
+        <div class="container">
+            <button class="action" onclick="CleanAll()">AC</button>
+            <button class="action" onclick="CleanCurrentEntry()">C</button>
+            <button class="action" onclick="Percentage()">%</button>
+            <button class="action" onclick="CalcAction('/')">/</button>
+
+
+            <button class="num" onClick = "data(7)">7</button>
+            <button class="num" onClick= "data(8)">8</button>
+            <button class="num" onClick = "data(9)">9</button>
+            <button class="action" onclick="CalcAction('x')">x</button>
+
+            
+            <button class="num" onClick = "data(4)">4</button>
+            <button class="num" onClick = "data(5)">5</button>
+            <button class="num" onClick = "data(6)">6</button>
+            <button class="action" onclick="CalcAction('-')">-</button>
+        
+            <button class="num" onClick = "data(1)">1</button>
+            <button class="num" onClick = "data(2)">2</button>
+            <button class="num" onClick = "data(3)">3</button>
+            <button class="action" onclick="CalcAction('+')">+</button>
+
+            <button class="num" onClick = "data(.)">.</button>
+            <button class="num zero" onClick = "data(0)">0</button>
+            <button class="numeric action result" onclick="Result()">=</button>
+            
+            
+    </div>
+    <script src= "calculator.js"></script>
+     </body>
+ </html>
